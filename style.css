@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(193, 193, 193);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-family: Poppins;
+}
+
+.navbar h4 {
+    color: rgb(51, 182, 51);
+    text-transform: uppercase;
+}
+
+.navlink {
+    margin: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.navlink a {
+    font-size: 12px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navlink a:hover {
+    color: rgb(51, 182, 51);
+    transition: all 0.5s ease-in-out;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(193, 193, 193) 100%),
+    url(/img/cloud.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 100px;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.child p {
+    margin-top: 25%;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image:     
+    linear-gradient(to top, rgba(255, 255, 255, 0) 40%, rgb(193, 193, 193) 100%),
+    url(/img/leaves2.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Poppins;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+
+
+.about h1 {
+    font-size: 10em;
+    margin-left: 10%;
+}
+
+.about-content h3 {
+    font-size: 3em;
+    text-transform: uppercase;
+    width: 500px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: 
+        url('img/ground.png'), /* Ground di atas */
+        url('img/leavesdrp.png'); /* Meteor di bawah */
+    background-size: cover, auto; /* Sesuaikan ukuran masing-masing gambar */
+    background-repeat: no-repeat, no-repeat; /* Tentukan pengulangan untuk masing-masing */
+    background-position: center, center; /* Atur posisi masing-masing gambar */
+    background-attachment: scroll, fixed; /* Ground 'scroll', meteor 'fixed' */
+}
+
+
+.contact-content {
+    font-family: Poppins;
+}
+
+.contact-content h3 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.contact-content p {
+    font-size: 1.5em;
+}
+
+#container3D {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(193, 193, 193) 100%),
+        url(/img/cloud.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        overflow: hidden;
+        margin: 0;
+
+    }
+
+    
+
+    .container h1{
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    .about{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about h1 {
+        font-size: 3em;
+        width: auto;
+        padding-top: 50%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .about-content h3 {
+        font-size: 1em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        width: auto;
+        margin: 0;
+    }
+    .about-content p {
+        font-size: 0.5em;
+    }
+    .contact-content h3{
+        font-size: 1.5em;
+    }
+    .contact-content p {
+        font-size: 1em;
+    }
+}
