@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(193, 193, 193) 100%), url('https://raw.githubusercontent.com/KenorAzka/beefy/main/img/leaves2.png');
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, rgb(193, 193, 193) 100%), url('https://raw.githubusercontent.com/KenorAzka/beefy/main/img/leaves2.png');
 
     background-position: right;
     background-size: cover;
